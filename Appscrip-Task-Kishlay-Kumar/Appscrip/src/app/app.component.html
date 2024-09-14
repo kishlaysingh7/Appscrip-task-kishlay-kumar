@@ -1,0 +1,8 @@
+<app-header></app-header>
+
+<div class="main-layout">
+  <!-- Capture filtersChanged event and pass filters to product list -->
+  <!-- <app-filter-sidebar (filtersChanged)="onFiltersChanged($event)"></app-filter-sidebar> -->
+  <app-product-list [filters]="filters"></app-product-list>
+</div>
+<app-subscribe-section></app-subscribe-section>

@@ -1,0 +1,128 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Flexbox container for subscription and contact/currency */
+  .subscribe-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+  
+  /* Subscription Section */
+  .subscribe-section {
+    max-width: 60%; /* Adjust width as needed */
+  }
+  
+  .subscribe-section h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .subscribe-section p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .subscribe-form {
+    display: flex;
+  }
+  
+  .subscribe-form input {
+    padding: 0.5rem;
+    width: 70%;
+    border: none;
+    outline: none;
+    margin-right: 0.5rem;
+  }
+  
+  .subscribe-form button {
+    padding: 0.5rem 1.5rem;
+    background-color: black;
+    color: grey;
+    border-color: grey;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  /* Contact and Currency Section */
+  .contact-currency {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .contact-info,
+  .currency-info {
+    font-size: 0.9rem;
+  }
+  
+  .contact-info h4,
+  .currency-info h4 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Main Footer */
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Payment Options */
+  .payment-options {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .payment-options img {
+    width: 40px;
+  }
+  

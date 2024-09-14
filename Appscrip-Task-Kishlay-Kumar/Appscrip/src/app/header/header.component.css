@@ -1,0 +1,92 @@
+/* Navbar Styles */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.material-icons {
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+.language-switcher {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0.5rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #ff4b5c;
+}
+
+/* Main Header Section */
+.main-header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.main-header p {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+}

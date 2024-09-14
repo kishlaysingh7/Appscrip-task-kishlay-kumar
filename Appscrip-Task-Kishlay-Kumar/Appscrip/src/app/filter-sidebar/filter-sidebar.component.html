@@ -1,0 +1,94 @@
+<div class="filter-sidebar">
+    <h3>Filters</h3>
+  
+    <!-- Customizable Checkbox -->
+    <div class="filter-item">
+      <input type="checkbox" id="customizable" [(ngModel)]="filters.customizable" (change)="applyFilter()">
+      <label for="customizable">Customizable</label>
+    </div>
+  
+    <!-- Ideal For Filter -->
+    <div class="filter-item">
+      <label for="idealFor">Ideal For</label>
+      <select id="idealFor" [(ngModel)]="filters.idealFor" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+    </div>
+  
+    <!-- Occasion Filter -->
+    <div class="filter-item">
+      <label for="occasion">Occasion</label>
+      <select id="occasion" [(ngModel)]="filters.occasion" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+        <option value="party">Party</option>
+      </select>
+    </div>
+  
+    <!-- Work Filter -->
+    <div class="filter-item">
+      <label for="work">Work</label>
+      <select id="work" [(ngModel)]="filters.work" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="office">Office</option>
+        <option value="freelance">Freelance</option>
+      </select>
+    </div>
+  
+    <!-- Fabric Filter -->
+    <div class="filter-item">
+      <label for="fabric">Fabric</label>
+      <select id="fabric" [(ngModel)]="filters.fabric" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="cotton">Cotton</option>
+        <option value="silk">Silk</option>
+        <option value="wool">Wool</option>
+      </select>
+    </div>
+  
+    <!-- Segment Filter -->
+    <div class="filter-item">
+      <label for="segment">Segment</label>
+      <select id="segment" [(ngModel)]="filters.segment" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="luxury">Luxury</option>
+        <option value="affordable">Affordable</option>
+      </select>
+    </div>
+  
+    <!-- Suitable For Filter -->
+    <div class="filter-item">
+      <label for="suitableFor">Suitable For</label>
+      <select id="suitableFor" [(ngModel)]="filters.suitableFor" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="indoor">Indoor</option>
+        <option value="outdoor">Outdoor</option>
+      </select>
+    </div>
+  
+    <!-- Raw Materials Filter -->
+    <div class="filter-item">
+      <label for="rawMaterials">Raw Materials</label>
+      <select id="rawMaterials" [(ngModel)]="filters.rawMaterials" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="organic">Organic</option>
+        <option value="synthetic">Synthetic</option>
+      </select>
+    </div>
+  
+    <!-- Pattern Filter -->
+    <div class="filter-item">
+      <label for="pattern">Pattern</label>
+      <select id="pattern" [(ngModel)]="filters.pattern" (change)="applyFilter()">
+        <option value="all">All</option>
+        <option value="striped">Striped</option>
+        <option value="plain">Plain</option>
+        <option value="floral">Floral</option>
+      </select>
+    </div>
+  </div>
+  

@@ -1,0 +1,105 @@
+<div class="product-page-container">
+  <!-- Sidebar with Filters -->
+  <div class="sidebar">
+    <h3>Filters</h3>
+
+    <!-- Filter: Ideal For -->
+    <div class="filter-group">
+      <label for="idealFor">Ideal For</label>
+      <select id="idealFor" [(ngModel)]="filters.idealFor" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+    </div>
+
+    <!-- Filter: Occasion -->
+    <div class="filter-group">
+      <label for="occasion">Occasion</label>
+      <select id="occasion" [(ngModel)]="filters.occasion" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+        <option value="party">Party</option>
+        <option value="wedding">Wedding</option>
+      </select>
+    </div>
+
+    <!-- Filter: Work -->
+    <div class="filter-group">
+      <label for="work">Work</label>
+      <select id="work" [(ngModel)]="filters.work" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="handwoven">Handwoven</option>
+        <option value="machine">Machine-made</option>
+      </select>
+    </div>
+
+    <!-- Filter: Fabric -->
+    <div class="filter-group">
+      <label for="fabric">Fabric</label>
+      <select id="fabric" [(ngModel)]="filters.fabric" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="cotton">Cotton</option>
+        <option value="silk">Silk</option>
+        <option value="linen">Linen</option>
+        <option value="polyester">Polyester</option>
+      </select>
+    </div>
+
+    <!-- Filter: Segment -->
+    <div class="filter-group">
+      <label for="segment">Segment</label>
+      <select id="segment" [(ngModel)]="filters.segment" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="premium">Premium</option>
+        <option value="midrange">Midrange</option>
+        <option value="budget">Budget</option>
+      </select>
+    </div>
+
+    <!-- Filter: Suitable For -->
+    <div class="filter-group">
+      <label for="suitableFor">Suitable For</label>
+      <select id="suitableFor" [(ngModel)]="filters.suitableFor" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="summer">Summer</option>
+        <option value="winter">Winter</option>
+        <option value="rainy">Rainy</option>
+      </select>
+    </div>
+
+    <!-- Filter: Raw Materials -->
+    <div class="filter-group">
+      <label for="rawMaterials">Raw Materials</label>
+      <select id="rawMaterials" [(ngModel)]="filters.rawMaterials" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="organic">Organic</option>
+        <option value="synthetic">Synthetic</option>
+      </select>
+    </div>
+
+    <!-- Filter: Pattern -->
+    <div class="filter-group">
+      <label for="pattern">Pattern</label>
+      <select id="pattern" [(ngModel)]="filters.pattern" (change)="applyFilters()">
+        <option value="all">All</option>
+        <option value="solid">Solid</option>
+        <option value="striped">Striped</option>
+        <option value="checkered">Checkered</option>
+        <option value="floral">Floral</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Main Product List -->
+  <div class="product-list">
+    <div *ngFor="let product of filteredProducts" class="product-card">
+      <img [src]="product.image" alt="{{product.title}}" />
+      <h4>{{ product.title }}</h4>
+      <p class="price">{{ product.price | currency }}</p>
+      <button class="add-to-cart-btn">Add to cart</button>
+    </div>
+  </div>
+</div>
